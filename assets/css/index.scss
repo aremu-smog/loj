@@ -1,0 +1,106 @@
+$blue: #192751;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sens-serif;
+}
+
+// House Cleaning
+a{
+    text-decoration: none;
+    color: white;
+}
+
+//Utilities
+
+.row{display: flex;}
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: (100% /12)*$i;
+    }
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.flex-vertical{
+    align-items: center;
+}
+.both-ends{
+    justify-content: space-between;
+}
+
+//Blue background
+.bg-blue{background: $blue}
+
+//Text
+.text-left{text-align: left}
+.text-center{text-align: center}
+
+h1,h2,h3{
+    color: $blue;
+}
+
+// Website Sections
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 2em 0;
+    nav{
+        span{
+            display: inline-block; margin-right: 1.5em;
+            &:last-child{
+                margin-right: 0;
+            }
+            button{
+                background: none;
+                padding: 0.75em 1.75em;
+                border: 2px solid white;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: Poppins, sans-serif;
+            }
+            }
+    }
+
+}
+.landing{
+    min-height: 95vh;
+    background: $blue;
+    background-image: url('../img/LOJ Landing Image.jpg');
+    color: white;
+    background-size: cover;
+    background-position: top center;
+    font-size: 2.5em;
+}
+
+footer{
+    padding: 2em;
+    .col-6{
+        img{
+            margin-top: 30px;
+            height: 80px;
+        }
+    }
+    h3{
+        color: white;
+        margin-bottom: 1.5em;
+    }
+    .links{
+        span{
+            display: block;
+            margin-bottom: 1em;
+        }
+            .social-icons{
+                span{display: inline-block;}
+
+            }
+    }
+}

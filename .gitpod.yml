@@ -1,3 +1,7 @@
 tasks:
   - init: 'echo "TODO: Replace with init/build command"'
     command: 'echo "TODO: Replace with command to start project"'
+
+vscode:
+  extensions:
+    - ritwickdey.live-sass@3.0.0:x2c+sCJm+QmH2qn2h1X9Zw==
