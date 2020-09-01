@@ -1,4 +1,5 @@
 $blue: #192751;
+$light-blue: #00256D;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 body{
@@ -15,15 +16,19 @@ a{
 
 //Utilities
 
-.row{display: flex;}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 @for $i from 1 through 12{
     .col-#{$i}{
-        width: (100% /12)*$i;
+        width: ((100% /12)*$i) - 5%;
     }
 }
 .container{
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: auto;
 }
@@ -36,15 +41,39 @@ a{
 
 //Blue background
 .bg-blue{background: $blue}
+.bg-light-blue{background: $light-blue}
 
-//Text
+//Text Alignment
 .text-left{text-align: left}
 .text-center{text-align: center}
 
+
+// Text Colors
+.text-white{color: white}
+.text-light-blue{ color: $blue}
 h1,h2,h3{
-    color: $blue;
+    color: $light-blue;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+    font-weight: 500;
 }
 
+.highlight{
+    font-size: 1.2em;
+    margin: auto;
+}
+.highlight-short{
+    max-width: 500px;
+}
+.highlight-long{
+    max-width: 700px;
+}
 // Website Sections
 header{
     position: fixed;
@@ -73,14 +102,43 @@ header{
 }
 .landing{
     min-height: 95vh;
-    background: $blue;
+    background-color: $blue;
     background-image: url('../img/LOJ Landing Image.jpg');
+    background-blend-mode: multiply;
     color: white;
     background-size: cover;
     background-position: top center;
     font-size: 2.5em;
+
 }
 
+
+.section{
+    padding: 5em 0;
+}
+
+.who-we-are{
+    .col-6{
+        padding: 3em 1.5em;
+        margin: 4em 0;
+        border-radius: 10px;
+        min-height: 200px;
+    }
+}
+
+.service{
+    margin: 4em 0;
+    .intro{
+        text-transform: uppercase;
+        color: $light-blue;
+    }
+    h2{
+        margin-top: -0.25em;
+    }
+    p:not([class="intro"]){
+        margin-top: -0.5em;
+    }
+}
 footer{
     padding: 2em;
     .col-6{
@@ -99,8 +157,16 @@ footer{
             margin-bottom: 1em;
         }
             .social-icons{
-                span{display: inline-block;}
+                span{
+                    display: inline-block;
+                    margin-right: 1em;
+                }
 
             }
+    }
+
+    // Copyright
+    .copyright{
+        margin-top: 5em;
     }
 }

@@ -14,58 +14,63 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .col-1 {
-  width: 8.33333%;
+  width: 3.33333%;
 }
 
 .col-2 {
-  width: 16.66667%;
+  width: 11.66667%;
 }
 
 .col-3 {
-  width: 25%;
+  width: 20%;
 }
 
 .col-4 {
-  width: 33.33333%;
+  width: 28.33333%;
 }
 
 .col-5 {
-  width: 41.66667%;
+  width: 36.66667%;
 }
 
 .col-6 {
-  width: 50%;
+  width: 45%;
 }
 
 .col-7 {
-  width: 58.33333%;
+  width: 53.33333%;
 }
 
 .col-8 {
-  width: 66.66667%;
+  width: 61.66667%;
 }
 
 .col-9 {
-  width: 75%;
+  width: 70%;
 }
 
 .col-10 {
-  width: 83.33333%;
+  width: 78.33333%;
 }
 
 .col-11 {
-  width: 91.66667%;
+  width: 86.66667%;
 }
 
 .col-12 {
-  width: 100%;
+  width: 95%;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: auto;
 }
@@ -86,6 +91,10 @@ a {
   background: #192751;
 }
 
+.bg-light-blue {
+  background: #00256D;
+}
+
 .text-left {
   text-align: left;
 }
@@ -94,8 +103,40 @@ a {
   text-align: center;
 }
 
-h1, h2, h3 {
+.text-white {
+  color: white;
+}
+
+.text-light-blue {
   color: #192751;
+}
+
+h1, h2, h3 {
+  color: #00256D;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.highlight {
+  font-size: 1.2em;
+  margin: auto;
+}
+
+.highlight-short {
+  max-width: 500px;
+}
+
+.highlight-long {
+  max-width: 700px;
 }
 
 header {
@@ -127,12 +168,41 @@ header nav span button {
 
 .landing {
   min-height: 95vh;
-  background: #192751;
+  background-color: #192751;
   background-image: url("../img/LOJ Landing Image.jpg");
+  background-blend-mode: multiply;
   color: white;
   background-size: cover;
   background-position: top center;
   font-size: 2.5em;
+}
+
+.section {
+  padding: 5em 0;
+}
+
+.who-we-are .col-6 {
+  padding: 3em 1.5em;
+  margin: 4em 0;
+  border-radius: 10px;
+  min-height: 200px;
+}
+
+.service {
+  margin: 4em 0;
+}
+
+.service .intro {
+  text-transform: uppercase;
+  color: #00256D;
+}
+
+.service h2 {
+  margin-top: -0.25em;
+}
+
+.service p:not([class="intro"]) {
+  margin-top: -0.5em;
 }
 
 footer {
@@ -156,5 +226,10 @@ footer .links span {
 
 footer .links .social-icons span {
   display: inline-block;
+  margin-right: 1em;
+}
+
+footer .copyright {
+  margin-top: 5em;
 }
 /*# sourceMappingURL=index.css.map */
