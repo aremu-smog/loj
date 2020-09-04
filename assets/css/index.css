@@ -71,8 +71,9 @@ a {
 
 .container {
   max-width: 1400px;
-  width: 100%;
   margin: auto;
+  padding: 2em;
+  width: calc(100% - 4em);
 }
 
 .flex-vertical {
@@ -118,12 +119,14 @@ h1, h2, h3 {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 2.3em;
+  margin-bottom: 2.5em;
 }
 
 h2 {
   font-size: 2em;
   font-weight: 500;
+  line-height: 1;
 }
 
 .highlight {
@@ -139,7 +142,26 @@ h2 {
   max-width: 700px;
 }
 
-header {
+.img-full {
+  width: 100%;
+}
+
+button {
+  background: none;
+  padding: 0.75em 1.75em;
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+}
+
+button:hover {
+  background: white;
+  color: #00256D;
+}
+
+.main-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -147,23 +169,13 @@ header {
   padding: 2em 0;
 }
 
-header nav span {
+.main-header nav span {
   display: inline-block;
   margin-right: 1.5em;
 }
 
-header nav span:last-child {
+.main-header nav span:last-child {
   margin-right: 0;
-}
-
-header nav span button {
-  background: none;
-  padding: 0.75em 1.75em;
-  border: 2px solid white;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: Poppins, sans-serif;
 }
 
 .landing {
@@ -205,31 +217,93 @@ header nav span button {
   margin-top: -0.5em;
 }
 
-footer {
+.what_makes_us_special {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 6em;
+}
+
+.what_makes_us_special .image_area {
+  background-image: url("../img/what_makes_us_special_loj.jpg");
+  background-size: 200%;
+  background-position: left center;
+  border-radius: 0 5px 5px 0;
+}
+
+.what_makes_us_special .row {
+  padding-left: 10%;
+  max-width: 800px;
+}
+
+.what_makes_us_special .row .col-6 {
+  margin: 3em 0;
+}
+
+.innovation-vehicles .col-6 {
+  width: 50%;
+}
+
+.innovation-vehicles .vehicle .information {
+  padding: 2em;
+  width: calc(50% - 4em);
+}
+
+.innovation-vehicles .vehicle .information div {
+  max-width: 400px;
+}
+
+.innovation-vehicles .vehicle:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.innovation-vehicles .vehicle:nth-child(odd) .information {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.csr h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+.csr h1 {
+  text-transform: none;
+  margin-top: -0.3em;
+}
+
+.main-footer {
   padding: 2em;
 }
 
-footer .col-6 img {
+.main-footer .col-6 img {
   margin-top: 30px;
   height: 80px;
 }
 
-footer h3 {
+.main-footer h3 {
   color: white;
   margin-bottom: 1.5em;
 }
 
-footer .links span {
+.main-footer .links span {
   display: block;
   margin-bottom: 1em;
 }
 
-footer .links .social-icons span {
+.main-footer .links .social-icons span {
   display: inline-block;
   margin-right: 1em;
 }
 
-footer .copyright {
+.main-footer .copyright {
   margin-top: 5em;
 }
 /*# sourceMappingURL=index.css.map */

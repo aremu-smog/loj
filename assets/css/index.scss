@@ -29,8 +29,9 @@ a{
 }
 .container{
     max-width: 1400px;
-    width: 100%;
     margin: auto;
+    padding:2em;
+    width: calc(100% - 4em);
 }
 .flex-vertical{
     align-items: center;
@@ -57,11 +58,13 @@ h1,h2,h3{
 h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2.3em;
+    margin-bottom: 2.5em;
 }
 h2{
     font-size: 2em;
     font-weight: 500;
+    line-height: 1;
 }
 
 .highlight{
@@ -74,8 +77,27 @@ h2{
 .highlight-long{
     max-width: 700px;
 }
+
+.img-full{
+    width: 100%;
+}
+
+// Button 
+button{
+    background: none;
+    padding: 0.75em 1.75em;
+    border: 1.5px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    &:hover{
+        background: white;
+        color: $light-blue;
+    }
+}
 // Website Sections
-header{
+.main-header{
     position: fixed;
     top: 0;
     width: 100%;
@@ -87,15 +109,7 @@ header{
             &:last-child{
                 margin-right: 0;
             }
-            button{
-                background: none;
-                padding: 0.75em 1.75em;
-                border: 2px solid white;
-                color: white;
-                border-radius: 5px;
-                cursor: pointer;
-                font-family: Poppins, sans-serif;
-            }
+            
             }
     }
 
@@ -139,7 +153,63 @@ header{
         margin-top: -0.5em;
     }
 }
-footer{
+.what_makes_us_special{
+    justify-content: flex-start;
+    margin-top: 6em;
+    .image_area{
+        background-image: url('../img/what_makes_us_special_loj.jpg');
+        background-size: 200%;
+        background-position: left center;
+        border-radius: 0 5px 5px 0;
+    }
+    .row{
+        padding-left: 10%;
+        max-width: 800px;
+        .col-6{
+            margin: 3em 0;
+        }
+    }
+}
+
+.innovation-vehicles{
+    .col-6{
+        width: 50%;
+    }
+    .vehicle{
+
+    .information{
+        padding: 2em;
+        width: calc(50% - 4em);
+        div{
+            max-width: 400px;
+        }
+    }
+
+  
+    }
+    .vehicle:nth-child(odd){
+        flex-direction: row-reverse;
+        .information{
+            justify-content: center;
+
+        }
+    }
+}
+
+.csr{
+    h3{
+        font-weight: normal;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 2px;
+        font-size: 1em;
+    }
+    h1{
+        text-transform: none;
+        margin-top: -0.3em;
+    }
+}
+.main-footer{
     padding: 2em;
     .col-6{
         img{
