@@ -101,6 +101,9 @@ button{
 }
 // Website Sections
 .main-header{
+    .menu-icon{
+        display: none;
+    }
     position: fixed;
     top: 0;
     width: 100%;
@@ -276,6 +279,48 @@ button{
         width: 100% !important;
         text-align: center;
         }
+    .main-header{
+        padding: 0;
+        background: $blue;
+        .container{
+            padding: 1em 2em;
+        }
+        img{
+            height: 40px;
+        }
+        .menu{
+            display: block;
+            img{height: 15px}
+        }
+        nav{
+            background: $blue;
+            width: 250px;
+            height: 0;   
+            top: 69px;
+            right: 0;
+            position: absolute;
+            transition: height 0.5s ease-out;
+            span{
+                display: block;
+                text-align: center;
+                opacity: 0;
+                margin: 2em 0;
+                font-size: 1.2em;
+                transition-property: opacity;
+                transition-duration: 0.25s;
+            }
+        }
+        .nav_open{
+            span{
+                opacity: 1;
+            }
+        }
+
+    
+    }
+    .landing{
+        font-size: 2em;
+    }
     .who-we-are{
         .col-6{
             padding: 0em;

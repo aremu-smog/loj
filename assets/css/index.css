@@ -175,6 +175,10 @@ button:hover {
   padding: 2em 0;
 }
 
+.main-header .menu-icon {
+  display: none;
+}
+
 .main-header nav span {
   display: inline-block;
   margin-right: 1.5em;
@@ -345,6 +349,49 @@ button:hover {
   .col-mobile {
     width: 100% !important;
     text-align: center;
+  }
+  .main-header {
+    padding: 0;
+    background: #192751;
+  }
+  .main-header .container {
+    padding: 1em 2em;
+  }
+  .main-header img {
+    height: 40px;
+  }
+  .main-header .menu {
+    display: block;
+  }
+  .main-header .menu img {
+    height: 15px;
+  }
+  .main-header nav {
+    background: #192751;
+    width: 250px;
+    height: 0;
+    top: 69px;
+    right: 0;
+    position: absolute;
+    -webkit-transition: height 0.5s ease-out;
+    transition: height 0.5s ease-out;
+  }
+  .main-header nav span {
+    display: block;
+    text-align: center;
+    opacity: 0;
+    margin: 2em 0;
+    font-size: 1.2em;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+  }
+  .main-header .nav_open span {
+    opacity: 1;
+  }
+  .landing {
+    font-size: 2em;
   }
   .who-we-are .col-6 {
     padding: 0em;
