@@ -334,4 +334,53 @@ button:hover {
 .main-footer .copyright {
   margin-top: 5em;
 }
+
+@media screen and (max-width: 468px) {
+  body {
+    font-size: 0.75em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .col-mobile {
+    width: 100% !important;
+    text-align: center;
+  }
+  .who-we-are .col-6 {
+    padding: 0em;
+    margin: 1em 0;
+  }
+  .who-we-are .col-6 img {
+    width: 50px;
+  }
+  .who-we-are .col-6 p {
+    text-align: left !important;
+  }
+  .innovation-vehicles .vehicle {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    margin-bottom: 6em;
+  }
+  .innovation-vehicles .vehicle img {
+    width: 80%;
+  }
+  .service {
+    padding: 0;
+  }
+  .service img {
+    width: 80px;
+  }
+  .service p:not([class="intro"]) {
+    width: 300px;
+    margin: auto;
+  }
+  .footprints .col-3 {
+    width: 33% !important;
+  }
+  .footprints .col-3 img {
+    width: 60px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

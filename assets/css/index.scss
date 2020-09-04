@@ -264,3 +264,54 @@ button{
         margin-top: 5em;
     }
 }
+
+@media screen and (max-width: 468px){
+    body{
+        font-size: 0.75em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .col-mobile{
+        width: 100% !important;
+        text-align: center;
+        }
+    .who-we-are{
+        .col-6{
+            padding: 0em;
+            margin: 1em 0;
+            img{
+                width: 50px;
+            }
+            p{
+        text-align: left !important;
+            }
+        }
+    }
+.innovation-vehicles{
+    .vehicle{
+        flex-direction: column-reverse !important;
+        margin-bottom: 6em;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+    .service{
+        padding: 0;
+        img{width: 80px;}
+        p:not([class="intro"]){
+            width: 300px;
+            margin: auto;
+        }
+    }
+    .footprints{
+        .col-3{
+            width: 33% !important;
+            img{
+                width: 60px;
+            }
+        }
+    }
+}
