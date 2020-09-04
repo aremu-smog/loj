@@ -175,7 +175,7 @@ button:hover {
   padding: 2em 0;
 }
 
-.main-header .menu-icon {
+.main-header .menu {
   display: none;
 }
 
@@ -368,7 +368,7 @@ button:hover {
   }
   .main-header nav {
     background: #192751;
-    width: 250px;
+    width: 200px;
     height: 0;
     top: 69px;
     right: 0;
@@ -393,6 +393,9 @@ button:hover {
   .landing {
     font-size: 2em;
   }
+  .landing br {
+    display: none;
+  }
   .who-we-are .col-6 {
     padding: 0em;
     margin: 1em 0;
@@ -402,6 +405,16 @@ button:hover {
   }
   .who-we-are .col-6 p {
     text-align: left !important;
+  }
+  .what_makes_us_special {
+    padding: 0 2em;
+  }
+  .what_makes_us_special .image_area {
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  .what_makes_us_special .row {
+    padding: 0 2em;
   }
   .innovation-vehicles .vehicle {
     -webkit-box-orient: vertical !important;
@@ -423,11 +436,20 @@ button:hover {
     width: 300px;
     margin: auto;
   }
+  .csr .info {
+    min-height: 150px;
+  }
+  .csr h2 {
+    font-size: 1.5em;
+  }
   .footprints .col-3 {
     width: 33% !important;
   }
   .footprints .col-3 img {
     width: 60px;
+  }
+  .main-footer .col-mobile {
+    margin-bottom: 3em;
   }
 }
 /*# sourceMappingURL=index.css.map */
