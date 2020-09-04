@@ -28,13 +28,16 @@ a{
     }
 }
 .container{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
     padding:2em;
     width: calc(100% - 4em);
 }
 .flex-vertical{
     align-items: center;
+}
+.flex-end{
+    align-items: flex-end;
 }
 .both-ends{
     justify-content: space-between;
@@ -178,8 +181,7 @@ button{
     .vehicle{
 
     .information{
-        padding: 2em;
-        width: calc(50% - 4em);
+        width: 50%;
         div{
             max-width: 400px;
         }
@@ -207,6 +209,28 @@ button{
     h1{
         text-transform: none;
         margin-top: -0.3em;
+    }
+    .info{
+        min-height: 300px;
+        background-image: url('../img/csr.jpg');
+        border-radius: 10px;
+        padding: 4em 0;
+        background-blend-mode: multiply;
+        h2{
+            margin: auto;
+            font-weight: 300;
+        }
+        margin-bottom: 6em;
+    }
+}
+
+.footprints{
+    .col-3{
+        width: 25%;
+        margin-bottom: 2em;
+        img{
+            margin: auto;
+        }
     }
 }
 .main-footer{
