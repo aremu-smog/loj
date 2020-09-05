@@ -101,6 +101,11 @@ button{
 }
 // Website Sections
 .main-header{
+    background-color: rgba(25, 39, 81, 0);
+    transition: (background-color, padding) 0.5s ease-out;
+    .container{
+        transition: padding 0.5s ease-out;
+    }
     .menu{
         display: none;
     }

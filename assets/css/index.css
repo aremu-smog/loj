@@ -168,11 +168,19 @@ button:hover {
 }
 
 .main-header {
+  background-color: rgba(25, 39, 81, 0);
+  -webkit-transition: background-color, padding 0.5s ease-out;
+  transition: background-color, padding 0.5s ease-out;
   position: fixed;
   top: 0;
   width: 100%;
   left: 0;
   padding: 2em 0;
+}
+
+.main-header .container {
+  -webkit-transition: padding 0.5s ease-out;
+  transition: padding 0.5s ease-out;
 }
 
 .main-header .menu {
