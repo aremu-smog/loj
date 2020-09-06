@@ -197,8 +197,8 @@ button:hover {
 }
 
 .landing {
-  min-height: 95vh;
-  background-color: #192751;
+  min-height: 85vh;
+  background-color: rgba(25, 39, 81, 0.8);
   background-image: url("../img/LOJ Landing Image.jpg");
   background-blend-mode: multiply;
   color: white;
@@ -353,10 +353,14 @@ button:hover {
   }
   h1 {
     font-size: 2em;
+    margin-bottom: 1em;
   }
   .col-mobile {
     width: 100% !important;
     text-align: center;
+  }
+  .section {
+    padding: 2em 0;
   }
   .main-header {
     padding: 0;
@@ -404,6 +408,9 @@ button:hover {
   .landing br {
     display: none;
   }
+  .who-we-are {
+    margin: 2em 0;
+  }
   .who-we-are .col-6 {
     padding: 0em;
     margin: 1em 0;
@@ -423,6 +430,9 @@ button:hover {
   }
   .what_makes_us_special .row {
     padding: 0 2em;
+  }
+  .what_makes_us_special br {
+    display: none;
   }
   .innovation-vehicles .vehicle {
     -webkit-box-orient: vertical !important;
@@ -444,11 +454,17 @@ button:hover {
     width: 300px;
     margin: auto;
   }
+  .service .intro {
+    font-size: 10px;
+  }
   .csr .info {
     min-height: 150px;
   }
   .csr h2 {
     font-size: 1.5em;
+  }
+  .footprint-title {
+    text-align: center;
   }
   .footprints .col-3 {
     width: 33% !important;
