@@ -76,13 +76,19 @@ a {
   width: calc(100% - 4em);
 }
 
-.flex-vertical {
+.vertical-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.flex-end {
+.horizontal-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vertical-bottom {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -126,7 +132,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.3em;
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
 }
 
 h2 {
@@ -157,7 +163,6 @@ button {
   padding: 0.75em 1.75em;
   border: 1.5px solid white;
   color: white;
-  border-radius: 5px;
   cursor: pointer;
   font-family: Poppins, sans-serif;
 }
@@ -171,6 +176,7 @@ button:hover {
   background-color: rgba(25, 39, 81, 0);
   -webkit-transition: background-color, padding 0.5s ease-out;
   transition: background-color, padding 0.5s ease-out;
+  z-index: 100;
   position: fixed;
   top: 0;
   width: 100%;
@@ -196,11 +202,14 @@ button:hover {
   margin-right: 0;
 }
 
-.landing {
-  min-height: 85vh;
-  background-color: rgba(25, 39, 81, 0.8);
-  background-image: url("../img/LOJ Landing Image.jpg");
+.bg-blue-filter {
+  background: rgba(25, 39, 81, 0.8);
   background-blend-mode: multiply;
+}
+
+.landing {
+  min-height: 100vh;
+  background-image: url("../img/LOJ Landing Image.jpg");
   color: white;
   background-size: cover;
   background-position: top center;
@@ -214,7 +223,6 @@ button:hover {
 .who-we-are .col-6 {
   padding: 3em 1.5em;
   margin: 4em 0;
-  border-radius: 10px;
   min-height: 200px;
 }
 
@@ -246,7 +254,6 @@ button:hover {
   background-image: url("../img/what_makes_us_special_loj.jpg");
   background-size: 200%;
   background-position: left center;
-  border-radius: 0 5px 5px 0;
 }
 
 .what_makes_us_special .row {
@@ -299,14 +306,12 @@ button:hover {
 .csr .info {
   min-height: 300px;
   background-image: url("../img/csr.jpg");
-  border-radius: 10px;
   padding: 4em 0;
-  background-blend-mode: multiply;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
 }
 
 .csr .info h2 {
-  margin: auto;
+  margin: 0 auto;
   font-weight: 300;
 }
 
@@ -317,6 +322,13 @@ button:hover {
 
 .footprints .col-3 img {
   margin: auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.footprints .col-3 img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .main-footer {
@@ -345,6 +357,7 @@ button:hover {
 
 .main-footer .copyright {
   margin-top: 5em;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 468px) {
@@ -353,7 +366,6 @@ button:hover {
   }
   h1 {
     font-size: 2em;
-    margin-bottom: 1em;
   }
   .col-mobile {
     width: 100% !important;
@@ -403,6 +415,7 @@ button:hover {
     opacity: 1;
   }
   .landing {
+    min-height: 85vh;
     font-size: 2em;
   }
   .landing br {
