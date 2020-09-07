@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -193,6 +197,10 @@ button:hover {
   display: none;
 }
 
+.main-header nav {
+  color: #192751;
+}
+
 .main-header nav span {
   display: inline-block;
   margin-right: 1.5em;
@@ -200,6 +208,15 @@ button:hover {
 
 .main-header nav span:last-child {
   margin-right: 0;
+}
+
+.nav_open_pc nav span a {
+  color: #192751;
+}
+
+.nav_open_pc button {
+  color: #192751;
+  border-color: #192751;
 }
 
 .bg-blue-filter {
@@ -382,19 +399,19 @@ button:hover {
     padding: 1em 2em;
   }
   .main-header img {
-    height: 40px;
+    width: 40px;
   }
   .main-header .menu {
     display: block;
   }
-  .main-header .menu img {
-    height: 15px;
+  .main-header .menu svg {
+    height: 50px;
   }
   .main-header nav {
     background: #192751;
     width: 200px;
     height: 0;
-    top: 69px;
+    top: 87px;
     right: 0;
     position: absolute;
     -webkit-transition: height 0.5s ease-out;
@@ -413,6 +430,13 @@ button:hover {
   }
   .main-header .nav_open span {
     opacity: 1;
+  }
+  .main-header .nav_open span a {
+    color: white;
+  }
+  .main-header .nav_open span button {
+    color: white;
+    border-color: white;
   }
   .landing {
     min-height: 85vh;
