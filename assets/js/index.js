@@ -9,9 +9,11 @@ nav_menu.addEventListener("click", () => {
         nav.style.height = '0px'
         nav.style.transitionDelay = '0.25s'
         nav.classList.remove("nav_open")
+        nav_menu.classList.remove("nav_open")
     }else{
         nav.style.transitionDelay = '0s'
         nav.classList.add("nav_open")
+        nav_menu.classList.add("nav_open")
         nav.style.height = '350px'
         
     }

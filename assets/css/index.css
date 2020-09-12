@@ -246,6 +246,7 @@ button:hover {
   padding: 3em 1.5em;
   margin: 4em 0;
   min-height: 200px;
+  border-radius: 10px;
 }
 
 .service {
@@ -259,6 +260,7 @@ button:hover {
 
 .service h2 {
   margin-top: -0.25em;
+  color: black;
 }
 
 .service p:not([class="intro"]) {
@@ -398,7 +400,6 @@ button:hover {
   }
   .main-header {
     padding: 0;
-    background: #192751;
   }
   .main-header .container {
     padding: 1em 2em;
@@ -443,6 +444,40 @@ button:hover {
     color: white;
     border-color: white;
   }
+  .main-header .nav_open span {
+    opacity: 1;
+  }
+  .main-header .nav_open span a {
+    color: white;
+  }
+  .main-header .nav_open span button {
+    color: white;
+    border-color: white;
+  }
+  .main-header .nav_open path.last, .main-header .nav_open path.first {
+    -webkit-transform: rotate(-45deg) translate(0px, 4px);
+            transform: rotate(-45deg) translate(0px, 4px);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+  }
+  .main-header .nav_open path.middle {
+    -webkit-transform: translate(-25px, 0px);
+            transform: translate(-25px, 0px);
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+  }
+  .main-header .nav_open path.first {
+    -webkit-transform: rotate(45deg) translate(0px, -3px);
+            transform: rotate(45deg) translate(0px, -3px);
+  }
   .landing {
     min-height: 85vh;
     font-size: 2em;
@@ -456,6 +491,7 @@ button:hover {
   .who-we-are .col-6 {
     padding: 0em;
     margin: 1em 0;
+    border-radius: 5px;
   }
   .who-we-are .col-6 img {
     width: 50px;
