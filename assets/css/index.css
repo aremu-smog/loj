@@ -402,16 +402,13 @@ button:hover {
     padding: 0;
   }
   .main-header .container {
-    padding: 1em 2em;
+    padding: 0.5em 2em;
   }
-  .main-header img {
-    width: 40px;
+  .main-header svg#website-logo {
+    width: 55px;
   }
   .main-header .menu {
     display: block;
-  }
-  .main-header .menu svg {
-    height: 50px;
   }
   .main-header nav {
     background: #192751;

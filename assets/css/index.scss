@@ -313,14 +313,15 @@ button{
     .main-header{
         padding: 0;
         .container{
-            padding: 1em 2em;
+            padding: 0.5em 2em;
         }
-        img{
-            width: 40px;
+        svg#website-logo{
+            width: 55px;
         }
+        
         .menu{
             display: block;
-            svg{height: 50px}
+        
         }
         nav{
             background: $blue;

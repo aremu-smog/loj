@@ -39,7 +39,7 @@ document.addEventListener('scroll', ()=>{
         main_header.style.backgroundColor = "rgba(255, 255, 255, 1)"
         main_header.style.padding = "0"
         main_header.classList.add("nav_open_pc")
-        main_header_container.style.padding = "1em"
+        main_header_container.style.padding = "0.5em"
         changeSvgsColor("#192751")
     }else{
         main_header.style.padding = "2em 0"
