@@ -105,6 +105,8 @@ button{
         color: $light-blue;
     }
 }
+
+
 // Website Sections
 .main-header{
     background-color: rgba(25, 39, 81, 0);
@@ -136,6 +138,10 @@ button{
 .nav_open_pc{
         nav span a{color: $blue}
         button{color: $blue; border-color: $blue}
+        //Logo
+    .logo-black{
+        fill: black;
+    }
     }
 
 .bg-blue-filter{

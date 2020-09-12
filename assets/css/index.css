@@ -219,6 +219,10 @@ button:hover {
   border-color: #192751;
 }
 
+.nav_open_pc .logo-black {
+  fill: black;
+}
+
 .bg-blue-filter {
   background: rgba(25, 39, 81, 0.8);
   background-blend-mode: multiply;
