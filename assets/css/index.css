@@ -409,7 +409,7 @@ button:hover {
   font-size: 1.75em;
 }
 
-.pop-up img {
+.pop-up img#close_popup {
   position: absolute;
   top: 20px;
   right: 1.75em;
@@ -428,6 +428,21 @@ button:hover {
           transition-delay: 0s;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
+}
+
+.pop-up .form {
+  display: block;
+}
+
+.pop-up .success {
+  display: none;
+  margin-bottom: 4em;
+}
+
+.pop-up .success img {
+  width: 170px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .pop-up .col-12 {

@@ -64,3 +64,16 @@ const become_a_client = document.querySelector("#open_popup")
 const close_popup = document.querySelector("#close_popup")
 become_a_client.addEventListener("click", () =>{popup("open") } , false)
 close_popup.addEventListener("click", () =>{popup("close") } , false)
+
+const get_started = document.querySelector("#get_started")
+
+const send_request = () => {
+
+}
+
+get_started.addEventListener("click", ()=> {
+    const form = document.querySelector("#contact_form")
+    const success = document.querySelector("#success_message")
+    form.style.display = "none"
+    success.style.display = "block"
+}, false)
