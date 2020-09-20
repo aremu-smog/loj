@@ -229,10 +229,14 @@ button{
 }
 
 .csr{
+    a{
+      color: $blue;
+      font-weight: bold;
+    }
     h3{
-        font-weight: normal;
+        font-weight: !important normal;
         text-transform: uppercase;
-        color: black;
+color: black;
         letter-spacing: 2px;
         font-size: 1em;
     }
@@ -240,7 +244,7 @@ button{
         text-transform: none;
         margin-top: -0.3em;
     }
-    .info{
+     .info{
         min-height: 300px;
         background-image: url('../img/csr.jpg');
         padding: 4em 0;
