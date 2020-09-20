@@ -389,6 +389,44 @@ button:hover {
   font-size: 12px;
 }
 
+.pop-up {
+  background: rgba(25, 39, 81, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.pop-up .container {
+  background: white;
+  border-radius: 5px;
+  max-width: 900px;
+  -webkit-transform: translateY(90px);
+          transform: translateY(90px);
+}
+
+.pop-up .form-group {
+  margin-bottom: 1em;
+}
+
+.pop-up .form-group .label {
+  display: block;
+}
+
+.pop-up .form-group input, .pop-up .form-group textarea {
+  width: calc(100% - 1.5em);
+  padding: 0.75em 1em;
+  border: 1px solid #192751;
+  border-radius: 5px;
+}
+
+.pop-up .form-group input:focus, .pop-up .form-group textarea:focus {
+  outline: none;
+  border: 1px solid #00256D;
+}
+
 @media screen and (max-width: 468px) {
   body {
     font-size: 0.75em;
