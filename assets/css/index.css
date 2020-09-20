@@ -404,7 +404,7 @@ button:hover {
     padding: 2em 0;
   }
   .main-header {
-    padding: 0;
+    padding: 0 !important;
   }
   .main-header .container {
     padding: 0.5em 2em;
@@ -415,11 +415,35 @@ button:hover {
   .main-header .menu {
     display: block;
   }
+  .main-header .menu path.last, .main-header .menu path.first {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+  }
+  .main-header .menu path.middle {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+  }
+  .main-header .menu path.first {
+    -webkit-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+  }
   .main-header nav {
     background: #192751;
     width: 200px;
     height: 0;
-    top: 87px;
+    top: 75px;
     right: 0;
     position: absolute;
     -webkit-transition: height 0.5s ease-out;
@@ -446,6 +470,9 @@ button:hover {
     color: white;
     border-color: white;
   }
+  .main-header .nav_open span button:hover {
+    color: #192751;
+  }
   .main-header .nav_open span {
     opacity: 1;
   }
@@ -471,6 +498,8 @@ button:hover {
   .main-header .nav_open path.middle {
     -webkit-transform: translate(-25px, 0px);
             transform: translate(-25px, 0px);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
     -webkit-transition-duration: 0.25s;
             transition-duration: 0.25s;
     -webkit-transition-timing-function: ease-out;

@@ -315,7 +315,7 @@ color: black;
         }
     .section{padding: 2em 0;}
     .main-header{
-        padding: 0;
+        padding: 0 !important;
         .container{
             padding: 0.5em 2em;
         }
@@ -325,13 +325,30 @@ color: black;
         
         .menu{
             display: block;
+            $transition-duration: 0.25s;
+            path.last {
+            transform: rotate(0deg) translate(0px, 0px);
+            transform-origin: center;
+            transition-duration: $transition-duration;
+            transition-timing-function: ease-in-out
+            }
+            path.middle {
+            transform: translate(0px, 0px);
+            transition-delay: $transition-duration;
+            transition-duration: $transition-duration;
+            transition-timing-function: ease-out;
+            }
+            path.first {
+            @extend path.last;
+            transform: rotate(0deg) translate(0px, 0px);
+            }
         
         }
         nav{
             background: $blue;
             width: 200px;
             height: 0;   
-            top: 87px;
+            top: 75px;
             right: 0;
             position: absolute;
             transition: height 0.5s ease-out;
@@ -351,10 +368,16 @@ color: black;
             span{
                 opacity: 1;
                 a{color: white}
-                button{color: white; border-color: white;}
+                button{
+                    color: white; border-color: white;
+                    &:hover{
+                        color: $blue;
+                    }
+                    }
 
             }
         }
+
       .nav_open{
             span{
                 opacity: 1;
@@ -367,11 +390,12 @@ color: black;
             transform: rotate(-45deg) translate(0px, 4px);
             transform-origin: center;
             transition-duration: $transition-duration;
-            transition-delay: $transition-duration;
+            transition-delay: $transition-duration ;
             transition-timing-function: ease-in-out
             }
             path.middle {
             transform: translate(-25px, 0px);
+            transition-delay: 0s;
             transition-duration: $transition-duration;
             transition-timing-function: ease-out;
             }
