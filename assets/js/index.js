@@ -50,3 +50,17 @@ document.addEventListener('scroll', ()=>{
     }
    
 })
+
+const popup = (action) => {
+    const popup = document.querySelector("#popup")
+    if(action == 'close'){
+        popup.classList.remove('pop-up-open')
+    }else if(action == 'open'){
+        popup.classList.add('pop-up-open')
+    }
+}
+
+const become_a_client = document.querySelector("#open_popup")
+const close_popup = document.querySelector("#close_popup")
+become_a_client.addEventListener("click", () =>{popup("open") } , false)
+close_popup.addEventListener("click", () =>{popup("close") } , false)

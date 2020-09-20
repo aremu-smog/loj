@@ -10,9 +10,12 @@
 <body>
     <main>
         <!-- BECOME A CLIENT-->
-        <section class="pop-up">
+        <section class="pop-up" id="popup">
             <article class="container">
-                <h2 class="text-left">We help clients build profitable and lasting relationships with their customers.</h2>
+                <div class="col-12">
+                    <h2 class="text-left">We help clients build profitable and lasting relationships with their customers.</h2>
+                    <img src="./assets/img/pop up close.svg" alt="Close" id="close_popup" />
+                </div>
                 <div class="row">
                     <div class="col-6 form-group">
                         <label>Last Name</label>
@@ -40,7 +43,7 @@
                     </div>
 
                     <div class="col-6 form-group">
-                        <label>Work PHone</label>
+                        <label>Work Phone</label>
                         <input type="text" name="work_phone" id="work_phone" />
                     </div>
 
@@ -48,6 +51,11 @@
                         <label>Tell us more about your brand (500 characters maximum)</label>
                         <textarea name="about_brand" id="about_brand" rows="10"></textarea>
                     </div>
+
+                    <div class="col-12 form-group">
+                        <button>GET STARTED</button>
+                    </div>
+                    
                 </div>
             </article>
         </section>
@@ -85,7 +93,7 @@
                     <span><a href="#services">Services</a></span>
                     <span><a href="#vehicles">Vehicles</a></span>
                     <span><a href="#csr">CSR</a></span>
-                    <span><button>Become a Client</button></span>
+                    <span><button class="open_pop_up" id="open_popup">Become a Client</button></span>
                 </nav>
             </div>
         </header>

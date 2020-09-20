@@ -307,16 +307,34 @@ color: black;
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: 1000;
+    z-index: -1;
+    opacity: 0;
     backdrop-filter: blur(3px);
+    transition-delay: 0.5s;
+    transition: all 0.25s ease-in-out;
+    h2{
+        line-height: 1.4;
+        font-size: 1.75em;
+    }
+    img {
+        position: absolute;
+        top: 20px;
+        right: 1.75em;
+        width: 25px;
+        cursor: pointer;
+    }
     .container{
         background: white;
         border-radius: 5px;
-        max-width: 900px;
-        transform: translateY(90px);
+        max-width: 700px;
+        transform: translateY(50px)  scale(0);
+        padding: 2em 3em;
+        transition-delay: 0s;
+        transition: 0.5s all ease-in-out;
     }
+    .col-12{width: 100%;}
     .form-group{
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
         .label{
             display: block;
         }
@@ -330,10 +348,22 @@ color: black;
                 border: 1px solid $light-blue;
             }
         }
+        button{
+            background: $blue;
+            color: white;
+        }
     }
 }
 .pop-up-open{
- 
+ z-index: 1000;
+ opacity: 1;
+ transition-delay: 0s;
+ transition: all 0.5s ease-in-out;
+ .container{
+     transform: translateY(50px) scale(1) ;
+     transition-delay: 0.5s ;
+     transition: all 0.5s ease-in-out;
+ }
 }
 
 @media screen and (max-width: 468px){
