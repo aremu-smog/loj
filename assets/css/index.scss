@@ -571,4 +571,19 @@ color: black;
             margin-bottom: 3em;
         }
     }
+
+    .pop-up{
+        .container{
+            padding: 2em;
+            max-width: 80%;
+        }
+        img#close_popup{width: 18px;}
+        .form-group{
+            input{
+                padding: 0.6em 1em;
+                width: calc(100% - 1.2em);
+            }
+            textarea{height: 50px;}
+        }
+    }
 }

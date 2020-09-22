@@ -693,5 +693,19 @@ button:hover {
   .main-footer .col-mobile {
     margin-bottom: 3em;
   }
+  .pop-up .container {
+    padding: 2em;
+    max-width: 80%;
+  }
+  .pop-up img#close_popup {
+    width: 18px;
+  }
+  .pop-up .form-group input {
+    padding: 0.6em 1em;
+    width: calc(100% - 1.2em);
+  }
+  .pop-up .form-group textarea {
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
