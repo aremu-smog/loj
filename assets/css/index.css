@@ -169,6 +169,7 @@ button {
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  outline: none;
   font-family: Poppins, sans-serif;
 }
 
