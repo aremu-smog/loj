@@ -59,9 +59,6 @@ close_popup.addEventListener("click", () =>{popup("close") } , false)
 
 const get_started = document.querySelector("#get_started")
 
-const send_request = () => {
-    
-}
 const form = document.querySelector("#contact_form")
 const success = document.querySelector("#success_message")
 
@@ -76,7 +73,48 @@ const popup = (action) => {
     success.style.display = "none"
 }
 
+const send_request = () => {
+    const fields = ["last_name","last_name","email","job_title","company_name","work_phone","about_brand"]
+    const errors = []
+    const empty_fields = []
+    const data = new FormData()
+    let field_value
+    fields.forEach(field => {
+        field_value = document.querySelector(`#${fields}`).value
+        if(field_value == ""){
+            empty_fields.push(field)
+            errors.push("No fields can be empty")
+        }else{
+            data.append(field, field_value)
+        }
+    })
+
+
+    
+    if(errors.length > 0){
+        alert("No fields can be empty")
+    }else{
+        fetch("contact.php", 
+        {
+            "method":"POST",
+            "body": data,
+            "headers": {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            }
+        })
+        .then(res => res.text())
+        .then(data => {
+            form.style.display = "none"
+            success.style.display = "block"
+            alert(data)
+        })
+        .catch(error => {
+            alert(error.message)
+        })
+    }
+}
+
 get_started.addEventListener("click", ()=> {
-    form.style.display = "none"
-    success.style.display = "block"
+    send_request()
 }, false)
