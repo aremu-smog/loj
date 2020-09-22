@@ -1,3 +1,22 @@
+//Active slider
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#image-slider',{
+        fixedHeight: '500px',
+        autoplay: true,
+        loop: true,
+        speed: 500,
+        type: 'fade',
+        rewind: true,
+        breakpoints:{
+            '480':{
+                fixedHeight: '140px'
+            }
+        }
+    } ).mount();
+} );
+
+
 var nav_open = false
 
 const nav_menu = document.querySelector(".menu")
