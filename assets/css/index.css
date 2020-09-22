@@ -518,9 +518,6 @@ button:hover {
     width: 100% !important;
     text-align: center;
   }
-  .section {
-    padding: 2em 0;
-  }
   .main-header {
     padding: 0 !important;
   }
@@ -650,6 +647,7 @@ button:hover {
   }
   .what_makes_us_special {
     padding: 0 2em;
+    margin-top: 4em;
   }
   .what_makes_us_special .image_area {
     height: 300px;
@@ -657,6 +655,13 @@ button:hover {
   }
   .what_makes_us_special .row {
     padding: 0 2em;
+  }
+  .what_makes_us_special .row .col-6 {
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+  .what_makes_us_special .row .col-6:first-child {
+    margin-top: 2em;
   }
   .what_makes_us_special br {
     display: none;
@@ -673,6 +678,9 @@ button:hover {
   }
   .service {
     padding: 0;
+  }
+  .service:last-child {
+    margin-bottom: 0;
   }
   .service img {
     width: 80px;

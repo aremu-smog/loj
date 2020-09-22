@@ -406,7 +406,7 @@ color: black;
         width: 100% !important;
         text-align: center;
         }
-    .section{padding: 2em 0;}
+    // .section{padding: 4em 0;}
     .main-header{
         padding: 0 !important;
         .container{
@@ -522,12 +522,20 @@ color: black;
     }
 .what_makes_us_special{
     padding: 0 2em;
+    margin-top: 4em;
     .image_area{
         height: 300px;
         border-radius: 10px 10px 0 0;
     }
     .row{
     padding: 0 2em;
+        .col-6{
+            &:first-child{
+                margin-top: 2em;
+            }
+            margin: 0;
+            padding: 0.5em 1em;
+        }
     }
     br{display: none;}
 }
@@ -543,6 +551,9 @@ color: black;
 
     .service{
         padding: 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
         img{width: 80px;}
         p:not([class="intro"]){
             width: 300px;
