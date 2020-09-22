@@ -244,7 +244,7 @@ button{
       font-weight: bold;
     }
     h3{
-        font-weight: !important normal;
+        font-weight:  normal !important;
         text-transform: uppercase;
 color: black;
         letter-spacing: 2px;
@@ -264,6 +264,8 @@ color: black;
         }
         margin-bottom: 4em;
     }
+
+    footer{font-size: 1.5em;}
 }
 
 .footprints{
@@ -553,6 +555,7 @@ color: black;
         h2{
             font-size: 1.5em;
         }
+        footer{font-size: 1.2em;}
     }
     .footprint-title{
         text-align: center;

@@ -326,7 +326,7 @@ button:hover {
 }
 
 .csr h3 {
-  font-weight: !important normal;
+  font-weight: normal !important;
   text-transform: uppercase;
   color: black;
   letter-spacing: 2px;
@@ -348,6 +348,10 @@ button:hover {
 .csr .info h2 {
   margin: 0 auto;
   font-weight: 300;
+}
+
+.csr footer {
+  font-size: 1.5em;
 }
 
 .footprints .col-3 {
@@ -680,6 +684,9 @@ button:hover {
   }
   .csr h2 {
     font-size: 1.5em;
+  }
+  .csr footer {
+    font-size: 1.2em;
   }
   .footprint-title {
     text-align: center;
