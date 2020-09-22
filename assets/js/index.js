@@ -51,14 +51,6 @@ document.addEventListener('scroll', ()=>{
    
 })
 
-const popup = (action) => {
-    const popup = document.querySelector("#popup")
-    if(action == 'close'){
-        popup.classList.remove('pop-up-open')
-    }else if(action == 'open'){
-        popup.classList.add('pop-up-open')
-    }
-}
 
 const become_a_client = document.querySelector("#open_popup")
 const close_popup = document.querySelector("#close_popup")
@@ -68,12 +60,23 @@ close_popup.addEventListener("click", () =>{popup("close") } , false)
 const get_started = document.querySelector("#get_started")
 
 const send_request = () => {
+    
+}
+const form = document.querySelector("#contact_form")
+const success = document.querySelector("#success_message")
 
+const popup = (action) => {
+    const popup = document.querySelector("#popup")
+    if(action == 'close'){
+        popup.classList.remove('pop-up-open')
+    }else if(action == 'open'){
+        popup.classList.add('pop-up-open')
+    }
+    form.style.display = "block"
+    success.style.display = "none"
 }
 
 get_started.addEventListener("click", ()=> {
-    const form = document.querySelector("#contact_form")
-    const success = document.querySelector("#success_message")
     form.style.display = "none"
     success.style.display = "block"
 }, false)
