@@ -10,7 +10,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
         rewind: true,
         breakpoints:{
             '480':{
-                fixedHeight: '140px'
+                fixedHeight: '200px'
             }
         }
     } ).mount();
