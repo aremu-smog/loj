@@ -40,7 +40,7 @@ foreach($fields as $field){
 // Check if any field is empty
 if(count($empty_fields) > 0){
  //
- echo false;
+ echo 2;
 }else{
     $to = "clientservices@lojcompany.com";
     $subject = "New Client";

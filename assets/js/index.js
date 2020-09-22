@@ -114,8 +114,10 @@ const send_request = () => {
                 form.style.display = "none"
                 success.style.display = "block"
                 clear_fields()
+            }else if(data == 0){
+                alert("Kindly try again")
             }else{
-                alert("There is an error o")
+                alert("Na wa o, how manage?")
             }
             
         })
