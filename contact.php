@@ -9,7 +9,7 @@ header("Access-Control-Allow-Methods: POST");
 //         $$field = $_POST[$field];
 //     }
 // }
-if(isset($_POST["last_name"]) && $_POST["last_name"] == "")
+if(isset($_POST["last_name"]) && $_POST["last_name"] != "")
 {
  echo $last_name;
 }else{
