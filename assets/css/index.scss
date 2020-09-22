@@ -573,6 +573,7 @@ color: black;
     }
 
     .pop-up{
+        h2{font-size: 1.6em; padding-right: 0.5em}
         .container{
             padding: 2em;
             max-width: 80%;
@@ -581,7 +582,7 @@ color: black;
         .form-group{
             input{
                 padding: 0.6em 1em;
-                width: calc(100% - 1.2em);
+                width: calc(100% - 2em);
             }
             textarea{height: 50px;}
         }
