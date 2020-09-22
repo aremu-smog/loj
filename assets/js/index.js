@@ -62,6 +62,14 @@ const get_started = document.querySelector("#get_started")
 const form = document.querySelector("#contact_form")
 const success = document.querySelector("#success_message")
 
+const fields = ["last_name","first_name","email","job_title","company_name","work_phone","about_brand"]
+
+const clear_fields = () => {
+     fields.forEach(field => {
+        document.querySelector(`#${field}`).value = ""
+    })
+}
+
 const popup = (action) => {
     const popup = document.querySelector("#popup")
     if(action == 'close'){
@@ -69,18 +77,18 @@ const popup = (action) => {
     }else if(action == 'open'){
         popup.classList.add('pop-up-open')
     }
+    clear_fields()
     form.style.display = "block"
     success.style.display = "none"
 }
 
 const send_request = () => {
-    const fields = ["last_name","last_name","email","job_title","company_name","work_phone","about_brand"]
     const errors = []
     const empty_fields = []
     const data = new FormData()
     let field_value
     fields.forEach(field => {
-        field_value = document.querySelector(`#${fields}`).value
+        field_value = document.querySelector(`#${field}`).value
         if(field_value == ""){
             empty_fields.push(field)
             errors.push("No fields can be empty")
@@ -106,6 +114,7 @@ const send_request = () => {
         .then(data => {
             form.style.display = "none"
             success.style.display = "block"
+            clear_fields()
             alert(data)
         })
         .catch(error => {
