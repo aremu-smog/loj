@@ -85,15 +85,12 @@ const popup = (action) => {
 const send_request = () => {
     const errors = []
     const empty_fields = []
-    const data = new FormData(get_started_form)
     let field_value
     fields.forEach(field => {
         field_value = document.querySelector(`#${field}`).value
         if(field_value == ""){
             empty_fields.push(field)
             errors.push("No fields can be empty")
-        }else{
-            // data.append(field, field_value)
         }
     })
 
@@ -103,6 +100,7 @@ const send_request = () => {
     if(errors.length > 0){
         alert("No fields can be empty")
     }else{
+        const data = new FormData(get_started_form)
         fetch("contact.php", 
         {
             "method":"POST",
