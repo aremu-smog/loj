@@ -139,7 +139,16 @@ button{
 }
 .nav_open_pc{
         nav span a{color: $blue}
-        button{color: $blue; border-color: $blue}
+        button{
+            color: $blue; 
+            border-color: $blue;
+            &:hover{
+                background: $blue;
+                color: white;
+            }
+            
+                
+            }
         //Logo
     .logo-black{
         fill: black;

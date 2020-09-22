@@ -221,6 +221,11 @@ button:hover {
   border-color: #192751;
 }
 
+.nav_open_pc button:hover {
+  background: #192751;
+  color: white;
+}
+
 .nav_open_pc .logo-black {
   fill: black;
 }
