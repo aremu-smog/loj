@@ -57,7 +57,7 @@ const close_popup = document.querySelector("#close_popup")
 become_a_client.addEventListener("click", () =>{popup("open") } , false)
 close_popup.addEventListener("click", () =>{popup("close") } , false)
 
-const get_started = document.querySelector("#get_started")
+const get_started_form = document.querySelector("#get_started_form")
 
 const form = document.querySelector("#contact_form")
 const success = document.querySelector("#success_message")
@@ -85,7 +85,7 @@ const popup = (action) => {
 const send_request = () => {
     const errors = []
     const empty_fields = []
-    const data = {last_name: "Aremu"}
+    const data = new FormData(get_started_form)
     let field_value
     fields.forEach(field => {
         field_value = document.querySelector(`#${field}`).value
@@ -123,6 +123,7 @@ const send_request = () => {
     }
 }
 
-get_started.addEventListener("click", ()=> {
+get_started_form.addEventListener("submit", (e)=> {
+    e.preventDefault()
     send_request()
 }, false)
