@@ -85,7 +85,7 @@ const popup = (action) => {
 const send_request = () => {
     const errors = []
     const empty_fields = []
-    const data = new FormData()
+    const data = {last_name: "Aremu"}
     let field_value
     fields.forEach(field => {
         field_value = document.querySelector(`#${field}`).value
@@ -93,7 +93,7 @@ const send_request = () => {
             empty_fields.push(field)
             errors.push("No fields can be empty")
         }else{
-            data.append(field, field_value)
+            // data.append(field, field_value)
         }
     })
 
