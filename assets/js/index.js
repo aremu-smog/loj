@@ -108,10 +108,16 @@ const send_request = () => {
         })
         .then(res => res.text())
         .then(data => {
-            form.style.display = "none"
-            success.style.display = "block"
-            clear_fields()
-            alert(data)
+
+            if(data == 1)
+            {
+                form.style.display = "none"
+                success.style.display = "block"
+                clear_fields()
+            }else{
+                alert("There is an error o")
+            }
+            
         })
         .catch(error => {
             alert(error.message)
