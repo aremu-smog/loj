@@ -99,8 +99,7 @@ const send_request = () => {
             "method":"POST",
             "body": data,
             "headers": {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
+                "Content-Type": "application/x-www-form-urlencoded"
             }
         })
         .then(res => res.text())
