@@ -98,6 +98,7 @@ const send_request = () => {
     })
 
 
+  
     
     if(errors.length > 0){
         alert("No fields can be empty")
@@ -105,10 +106,7 @@ const send_request = () => {
         fetch("contact.php", 
         {
             "method":"POST",
-            "body": data,
-            "headers": {
-                "Content-Type": "application/x-www-form-urlencoded"
-            }
+            "body": data
         })
         .then(res => res.text())
         .then(data => {
