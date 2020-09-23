@@ -541,11 +541,14 @@ color: black;
 }
 .innovation-vehicles{
     .vehicle{
+        padding: 0 2em;
         flex-direction: column-reverse !important;
         margin-bottom: 6em;
-        img{
-            width: 80%;
-        }
+    
+    }
+    .col-mobile{
+        text-align: left;
+       
     }
 }
 

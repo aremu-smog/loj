@@ -667,14 +667,15 @@ button:hover {
     display: none;
   }
   .innovation-vehicles .vehicle {
+    padding: 0 2em;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
     margin-bottom: 6em;
   }
-  .innovation-vehicles .vehicle img {
-    width: 80%;
+  .innovation-vehicles .col-mobile {
+    text-align: left;
   }
   .service {
     padding: 0;
