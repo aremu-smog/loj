@@ -57,6 +57,11 @@ if(count($empty_fields) > 0){
 
     $message .= "</body></html>";
 
+    $file = "clients.csv";
+    $handle = fopen($file,'a');
+    fwrite($handle,$email.','.$last_name.','.','.$first_name.PHP_EOL);
+
+
     if(@mail($to, $subject, $message, $headers))
     {
         echo true;
