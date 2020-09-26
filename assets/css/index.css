@@ -343,6 +343,12 @@ button:hover {
   margin-top: -0.3em;
 }
 
+.csr .slider-info {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  color: white;
+}
+
 .csr .info {
   min-height: 300px;
   background-image: url("../img/csr.jpg");
@@ -357,6 +363,7 @@ button:hover {
 
 .csr footer {
   font-size: 1.5em;
+  margin-top: -70px;
 }
 
 .footprints .col-3 {
@@ -698,6 +705,11 @@ button:hover {
   }
   .csr h2 {
     font-size: 1.5em;
+  }
+  .csr .slider-info {
+    padding: 0 2em;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
   }
   .csr footer {
     font-size: 1em;
