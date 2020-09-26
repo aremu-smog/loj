@@ -77,6 +77,7 @@ become_a_client.addEventListener("click", () =>{popup("open") } , false)
 close_popup.addEventListener("click", () =>{popup("close") } , false)
 
 const get_started_form = document.querySelector("#get_started_form")
+const get_started_button = document.querySelector("#get_started")
 
 const form = document.querySelector("#contact_form")
 const success = document.querySelector("#success_message")
@@ -144,9 +145,14 @@ const send_request = () => {
             alert(error.message)
         })
     }
+
+    get_started_button.innerHTML="GET STARTED"
+    get_started_button.removeAttribute("disabled")
 }
 
 get_started_form.addEventListener("submit", (e)=> {
     e.preventDefault()
+    get_started_button.innerHTML = "Processing..."
+    get_started_button.setAttribute("disabled","")
     send_request()
 }, false)
