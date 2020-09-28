@@ -571,7 +571,7 @@ button:hover {
     transition: height 0.5s ease-out;
   }
   .main-header nav span {
-    display: block;
+    display: none;
     text-align: center;
     opacity: 0;
     margin: 2em 0;
@@ -582,6 +582,7 @@ button:hover {
             transition-duration: 0.25s;
   }
   .main-header .nav_open span {
+    display: block !important;
     opacity: 1;
   }
   .main-header .nav_open span a {
