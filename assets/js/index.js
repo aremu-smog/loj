@@ -97,6 +97,7 @@ const popup = (action) => {
     }else if(action == 'open'){
         popup.classList.add('pop-up-open')
     }
+    popup.style.transitionDuration = "0.5s"
     clear_fields()
     form.style.display = "block"
     success.style.display = "none"

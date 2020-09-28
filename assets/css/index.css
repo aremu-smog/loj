@@ -419,10 +419,6 @@ button:hover {
   opacity: 0;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
 }
 
 .pop-up h2 {
@@ -498,8 +494,6 @@ button:hover {
 .pop-up-open {
   z-index: 1000;
   opacity: 1;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
