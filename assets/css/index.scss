@@ -403,6 +403,7 @@ color: black;
     h1{
         font-size: 2em;
     }
+    h2{font-size: 1.5em;}
     .col-mobile{
         width: 100% !important;
         text-align: center;
@@ -507,6 +508,10 @@ color: black;
         min-height: 85vh;
         font-size: 2em;
         br{display: none;}
+        .container{
+        width: 100%;
+        padding: 1em;
+        }
     }
     .who-we-are{
         margin: 2em 0;
@@ -602,7 +607,7 @@ color: black;
 
     .pop-up{
         
-        h2{font-size: 1.6em; padding-right: 0.25em}
+        h2{font-size: 1.5em; padding-right: 0.25em}
         .container{
             padding: 2em;
             max-width: 80%;
